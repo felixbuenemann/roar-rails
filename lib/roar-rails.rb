@@ -33,9 +33,7 @@ module Roar
       require 'roar/rails/rails4_0_strategy'
     when Gem::Version.new(4.2)
       require 'roar/rails/rails4_2_strategy'
-    when Gem::Version.new(5.0)
-      require 'roar/rails/rails5_0_strategy'
-    when Gem::Version.new("5.1")
+    when Gem::Version.new(5.0), Gem::Version.new(5.1), Gem::Version.new(5.2)
       require 'roar/rails/rails5_0_strategy'
     else
       # fallback to 4.0 strategy
